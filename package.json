@@ -8,6 +8,7 @@
   "license": "MIT",
   "private": false,
   "dependencies": {
+    "ansi-colors": "^4.1.1",
     "commander": "^5.1.0",
     "inquirer": "^7.1.0"
   }
