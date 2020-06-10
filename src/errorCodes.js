@@ -12,6 +12,16 @@ const errorCodes = {
   ERR_NO_PULLEYFILE: 1,
 
   /**
+   * Pulleyfile failed to load because YAML parse failed.
+   */
+  ERR_PULLEYFILE_PARSE: 2,
+
+  /**
+   * Pulleyfile schema validation failed.
+   */
+  ERR_PULLEYFILE_VALIDATION: 3,
+
+  /**
    * Returns the error code number for the given human readable error code.
    *
    * If no error code number exists for `errorCodeString`, null is returned.
