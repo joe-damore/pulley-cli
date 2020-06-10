@@ -144,8 +144,9 @@ const callbacks = {
  * @param {Object} source - Source whose configuration is being validated.
  * @param {Object} options - Options object to validate.
  */
+// TODO Throw error/return results so that validation result can be detected.
 const validateSource = async (source, options) => {
-  await validateRules(source.getOptionRules(), options, callbacks);
+  return await validateRules(source.getOptionRules(), options, callbacks);
 };
 
 /**
@@ -158,6 +159,7 @@ const validateSource = async (source, options) => {
  * @param {Object} options - Options object to validate.
  * @param {Object} authentication - Authentication options object to validate.
  */
+// TODO Throw error/return results so that validation result can be detected.
 const validateAuthenticatedSource = async (source, options, authentication) => {
   const promises = [
     validateRules(source.getOptionRules(), options, callbacks),
