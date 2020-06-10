@@ -1,4 +1,5 @@
 const colors = require('ansi-colors');
+const moment = require('moment');
 
 const Adapter = require('./adapter.js');
 const types = require('../types.js');
@@ -218,7 +219,26 @@ class ConsoleAdapter extends Adapter {
       return colors.message(message);
     })();
 
-    logFunction(`${formattedSymbol}${formattedMessage}`);
+    /**
+     * Returns a formatted string for the message timestamp.
+     *
+     * Formatting occurs according to the given `formatting` options;
+     * if `formatting.noTime` is true, an empty string is returned.
+     *
+     * @returns {string} Formatted timestamp string for message.
+     */
+    const formattedTime = (() => {
+      if (sendOptions.formatting.noTime) {
+        return '';
+      }
+      const timestamp = `${moment().format('hh:mm:ss A')} : `;
+      if (sendOptions.formatting.noColors) {
+        return timestamp;
+      }
+      return colors.message(timestamp);
+    })();
+
+    logFunction(`${formattedSymbol}${formattedTime}${formattedMessage}`);
   }
 
 }
