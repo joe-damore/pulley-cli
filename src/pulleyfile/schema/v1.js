@@ -34,6 +34,12 @@ const schemaV1 = {
         type: 'object',
         properties: {
           name: {type: 'string'},
+          metadata: {
+            type: 'object',
+            additionalProperties: {
+              type: 'string',
+            },
+          },
           source: {type: ['string', 'object']},
           options: {type: 'object'},
           authentication: {type: 'object'},
