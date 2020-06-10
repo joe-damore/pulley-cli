@@ -36,6 +36,7 @@ const schemaV1 = {
           name: {type: 'string'},
           source: {type: ['string', 'object']},
           options: {type: 'object'},
+          authentication: {type: 'object'},
           after: {
             type: 'array',
             items: {
