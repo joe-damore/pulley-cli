@@ -17,7 +17,7 @@
  * @returns {Object} Rule instance.
  */
 const extractRule = (rule) => {
-  // TODO Consider implementing in 'pulley-core' instead.
+  // TODO Use implementation from 'pulley-core' instead.
   if (Array.isArray(rule)) {
     return rule[0];
   }
