@@ -86,11 +86,11 @@ const getColorsForMessageOptions = (options) => {
 
   switch (options.type) {
     case types.DEBUG:
-      messageColors.symbol = colors.magenta;
+      messageColors.symbol = colors.cyan;
       break;
 
     case types.INFO:
-      messageColors.symbol = colors.cyan;
+      messageColors.symbol = colors.white;
       break;
 
     case types.NOTICE:
