@@ -187,6 +187,13 @@ class ConsoleAdapter extends Adapter {
     const colors = getColorsForMessageOptions(sendOptions);
     const symbol = getSymbolForMessageOptions(sendOptions);
 
+    /**
+     * Returns a formatted symbol character for the message being sent.
+     *
+     * Formatting occurs according to the given `formatting` options.
+     *
+     * @returns {string} Formatted symbol string for message.
+     */
     const formattedSymbol = (() => {
       if (sendOptions.formatting.noSymbol) {
         return '';
@@ -197,6 +204,13 @@ class ConsoleAdapter extends Adapter {
       return `${colors.symbol(symbol)} : `;
     })();
 
+    /**
+     * Returns a formatted string for the message being sent.
+     *
+     * Formatting occurs according to the given `formatting` options.
+     *
+     * @returns {string} Formatted string for message.
+     */
     const formattedMessage = (() => {
       if (sendOptions.formatting.noColors) {
         return message;
