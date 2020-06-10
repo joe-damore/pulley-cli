@@ -4,7 +4,7 @@
 
 const { Validator } = require('jsonschema');
 const schema = require('./v1.js');
-const { log } = require('../../log');
+const { log, colors } = require('../../log');
 
 /**
  * Validates the given Pulleyfile data against the v1 Pulleyfile schema.
@@ -16,7 +16,7 @@ const { log } = require('../../log');
  * @returns {Object} JSONSchema validation results.
  */
 const validate = (pulleyfileData) => {
-  log.sendInfo(`Validating Pulleyfile against v1 schema`);
+  log.sendInfo(`Validating Pulleyfile against ${colors.bold('v1')} schema`);
   const validator = new Validator();
   const results =  validator.validate(pulleyfileData, schema);
 
