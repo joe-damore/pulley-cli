@@ -20,8 +20,10 @@
     "inquirer": "^7.1.0",
     "jsonschema": "^1.2.6",
     "moment": "^2.26.0",
+    "pulley-bundler-default": "joe-damore/pulley-bundler-default#develop",
     "pulley-core": "joe-damore/pulley-core#develop",
     "pulley-source-local": "joe-damore/pulley-source-local#develop",
+    "sanitize-filename": "^1.6.3",
     "yaml": "^1.10.0"
   },
   "devDependencies": {
