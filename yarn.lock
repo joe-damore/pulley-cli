@@ -731,14 +731,14 @@ process-nextick-args@^2.0.0, process-nextick-args@~2.0.0:
 
 pulley-core@joe-damore/pulley-core#develop:
   version "0.1.0"
-  resolved "https://codeload.github.com/joe-damore/pulley-core/tar.gz/7cd714b8f4ea2febfa095e3619fd47eb64ffafb3"
+  resolved "https://codeload.github.com/joe-damore/pulley-core/tar.gz/b9f03c8e3f877f0bb600325d52d4d550892e2770"
   dependencies:
     vinyl "^2.2.0"
     vinyl-fs "^3.0.3"
 
 pulley-source-local@joe-damore/pulley-source-local#develop:
   version "0.1.0"
-  resolved "https://codeload.github.com/joe-damore/pulley-source-local/tar.gz/15f7bf6f7f74db7b8ccbdd6abe2aa37bc0ab18a2"
+  resolved "https://codeload.github.com/joe-damore/pulley-source-local/tar.gz/59875a4337d941ef88dd95859a135eb0e6564042"
   dependencies:
     pulley-core joe-damore/pulley-core#develop
 
