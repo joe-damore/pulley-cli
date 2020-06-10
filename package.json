@@ -4,7 +4,8 @@
   "description": "Command line app for Pulley",
   "main": "src/index.js",
   "scripts": {
-    "start": "node ."
+    "start": "node .",
+    "leasot": "leasot ./src/**/*.js --exit-nicely"
   },
   "repository": "git@github.com:joe-damore/pulley-cli.git",
   "author": "Joe D'Amore <joe@joedamore.me>",
