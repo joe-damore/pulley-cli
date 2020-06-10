@@ -170,6 +170,7 @@ class ConsoleAdapter extends Adapter {
    * @param {Object=} options - Message options.
    */
   send(message, options) {
+    // TODO Output date and/or time with log message
     const sendOptions = {
       formatting: this.defaultFormatting,
       ...options,
