@@ -28,11 +28,16 @@ const defaultSources = {
  * @returns {function} Constructor of source for `sourceName`.
  */
 const loadSource = (sourceName) => {
+  log.sendInfo(`Retrieving ${colors.bold(sourceName)} source`);
   if (defaultSources[sourceName]) {
+    log.sendInfo(`Retrieved source ${colors.bold(sourceName)} from built-in sources`, {
+      success: true,
+    });
     return defaultSources[sourceName];
   }
   // TODO Explore adding custom plugin loading from NPM and/or GitHub.
   // TODO Use identifiable error.
+  log.sendError(`Source ${colors.bold(sourceName)} does not exist`);
   throw new Error(`Source named '${sourceName}' does not exist`);
 };
 
