@@ -21,6 +21,7 @@ const program = new Command();
 
 // TODO Add 'silent' or similar option to silence output
 // TODO Add 'hide <element>' or similar option to hide specific log output
+// TODO Add 'skip-validation' or similar option to skip configuration validation (not schema validation)
 // TODO Add 'skip-missing-packages' or similar option to not bail on package retrieval failure
 // TODO Add 'yes' or similar option to automatically proceed through all (most?) prompts
 
