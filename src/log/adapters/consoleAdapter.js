@@ -81,7 +81,7 @@ const getColorsForMessageOptions = (options) => {
   }
 
   let messageColors = {
-    message: colors.white.bold,
+    message: colors.white,
   };
 
   switch (options.type) {
@@ -100,14 +100,14 @@ const getColorsForMessageOptions = (options) => {
     case types.WARNING:
       messageColors = {
         symbol: colors.yellow,
-        message: colors.yellow.bold,
+        message: colors.yellow,
       };
       break;
 
     case types.ERROR:
       messageColors = {
         symbol: colors.red,
-        message: colors.red.bold,
+        message: colors.red,
       };
       break;
   }
@@ -116,7 +116,7 @@ const getColorsForMessageOptions = (options) => {
   // In theory this could allow green error message output -- weird!
   if (options.success) {
     messageColors.symbol = colors.green;
-    messageColors.message = colors.green.bold;
+    messageColors.message = colors.green;
   }
 
   // Override with user-provided values if they exist.
