@@ -36,6 +36,13 @@ const keyValuePairsToLines = (keyValues) => {
     return currentMax;
   })();
 
+  /**
+   * Maps each key/value pair object to a string.
+   *
+   * @param {object} keyValue - Key/value pair object.
+   *
+   * @returns {string} Key/value pair string.
+   */
   const keyValueLines = keyValues.map((keyValue) => {
     const key = keyValue.key;
     const value = keyValue.value;
