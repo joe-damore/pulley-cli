@@ -644,6 +644,11 @@ minimatch@^3.0.4:
   dependencies:
     brace-expansion "^1.1.7"
 
+moment@^2.26.0:
+  version "2.26.0"
+  resolved "https://registry.yarnpkg.com/moment/-/moment-2.26.0.tgz#5e1f82c6bafca6e83e808b30c8705eed0dcbd39a"
+  integrity sha512-oIixUO+OamkUkwjhAVE18rAMfRJNsNe/Stid/gwHSOfHrOtw9EhAY2AHvdKZ/k/MggcYELFCJz/Sn2pL8b8JMw==
+
 mute-stream@0.0.8:
   version "0.0.8"
   resolved "https://registry.yarnpkg.com/mute-stream/-/mute-stream-0.0.8.tgz#1630c42b2251ff81e2a283de96a5497ea92e5e0d"
@@ -731,7 +736,7 @@ process-nextick-args@^2.0.0, process-nextick-args@~2.0.0:
 
 pulley-core@joe-damore/pulley-core#develop:
   version "0.1.0"
-  resolved "https://codeload.github.com/joe-damore/pulley-core/tar.gz/b9f03c8e3f877f0bb600325d52d4d550892e2770"
+  resolved "https://codeload.github.com/joe-damore/pulley-core/tar.gz/ded422f7ddf552e79c2f43742e000bf0fd30487c"
   dependencies:
     vinyl "^2.2.0"
     vinyl-fs "^3.0.3"
