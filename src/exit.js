@@ -1,4 +1,4 @@
-const log = require('./log/log.js');
+const { log, colors } = require('./log');
 const errorCodes = require('./errorCodes.js');
 
 /**
@@ -38,9 +38,9 @@ const exit = (code = 0, message = undefined) => {
       return message;
     }
     if (code > 0) {
-      let codeReadable = errorCodes.fromNumber(code);
-      let printedCode = !codeReadable ? code : `${code} (${codeReadable})`;
-      return `Quitting Pulley with exit code ${printedCode}`;
+      const codeReadable = errorCodes.fromNumber(code);
+      const printedCode = !codeReadable ? colors.bold(code) : `${colors.bold(code)} (${colors.bold(codeReadable)})`;
+      return `Quitting Pulley with ${colors.bold(`exit code`)} ${printedCode}`;
     }
     return `Quitting Pulley. Goodbye!`;
   })();
