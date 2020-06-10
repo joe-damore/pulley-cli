@@ -75,6 +75,7 @@ const main = async function() {
     exit(errorCodes.ERR_PULLEYFILE_VALIDATION);
   }
 
+  // TODO Refactor everything beneath this point.
   const retrievedPackages = [];
 
   for (let i = 0; i < pulleyfile.packages.length; i += 1) {
