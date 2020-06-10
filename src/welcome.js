@@ -53,8 +53,8 @@ const welcome = () => {
    */
   const titleText = getTitleText('= Pulley =');
 
-  sendRaw(colors.cyan.bold(titleText));
-  sendRaw(colors.cyan.bold(` v${pulleyInfo.version}`));
+  sendRaw(colors.cyan(titleText));
+  sendRaw(colors.cyan(` v${pulleyInfo.version}`));
   sendRaw('');
 };
 
