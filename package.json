@@ -1,0 +1,32 @@
+{
+  "name": "pulley-cli",
+  "version": "0.1.0",
+  "description": "Command line app for Pulley",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node .",
+    "leasot": "leasot ./src/**/*.js --exit-nicely"
+  },
+  "repository": "git@github.com:joe-damore/pulley-cli.git",
+  "author": "Joe D'Amore <joe@joedamore.me>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "ansi-colors": "^4.1.1",
+    "boxen": "^4.2.0",
+    "cli-spinner": "^0.2.10",
+    "commander": "^5.1.0",
+    "figlet": "^1.4.0",
+    "inquirer": "^7.1.0",
+    "jsonschema": "^1.2.6",
+    "moment": "^2.26.0",
+    "pulley-bundler-default": "joe-damore/pulley-bundler-default#develop",
+    "pulley-core": "joe-damore/pulley-core#develop",
+    "pulley-source-local": "joe-damore/pulley-source-local#develop",
+    "sanitize-filename": "^1.6.3",
+    "yaml": "^1.10.0"
+  },
+  "devDependencies": {
+    "leasot": "^11.0.0"
+  }
+}
