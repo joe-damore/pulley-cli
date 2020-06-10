@@ -1,7 +1,7 @@
 const pulley = require('./pulley.js');
 const welcome = require('./welcome.js');
 
-const { log, verbosity } = require('./log');
+const { log, colors, verbosity } = require('./log');
 const { ConsoleAdapter } = require('./log/adapters');
 
 const { validatePulleyfile } = require('./pulleyfile/schema');
@@ -93,7 +93,9 @@ const main = async function() {
   const BundlerClass = loadBundler(pulleyfile.bundler);
   const bundlerInstance = new BundlerClass();
 
+  log.send(`Bundling packages with ${colors.bold(pulleyfile.bundler)} bundler`);
   bundlerInstance.bundle(retrievedPackages, './out');
+  log.sendSuccess(`Bundled packages with ${colors.bold(pulleyfile.bundler)} bundler`);
 
 };
 
